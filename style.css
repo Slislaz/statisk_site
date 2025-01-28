@@ -1,0 +1,77 @@
+body {
+  margin: 5rem;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+h2,
+p,
+h3,
+h4,
+a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+.grid_1-1-1 a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 2rem;
+  background-color: gray;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.grid_1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.box img {
+  width: 100%;
+}
+
+.box h4 {
+  opacity: 20%;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.udsolgt_f {
+  filter: grayscale();
+}
+
+.udsolgt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color: white;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+}
+
+.rabat {
+  position: relative;
+  top: -200px;
+  left: 0;
+  background-color: red;
+  color: white;
+  width: 30%;
+  text-align: center;
+  padding: 5px;
+}
