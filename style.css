@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 5rem;
 }
@@ -7,6 +13,7 @@ h1 {
   font-weight: 900;
   font-size: 4rem;
   font-style: italic;
+  margin-bottom: 4rem;
 }
 
 h2,
@@ -18,8 +25,10 @@ a {
 }
 
 .grid_1-1-1 {
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+
   gap: 2rem;
 }
 .grid_1-1-1 a {
@@ -35,6 +44,9 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
+  grid-template-rows: repeat(5, auto);
+  gap: 2rem;
+  position: absolute;
 }
 
 .box img {
@@ -46,8 +58,9 @@ a {
 }
 
 .box {
+  grid-row: span 5;
   display: grid;
-  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
 }
 
 .udsolgt_f {
@@ -55,23 +68,31 @@ a {
 }
 
 .udsolgt {
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -350px;
   left: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.364);
   color: white;
-  width: 30%;
+  width: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 20px;
 }
 
 .rabat {
   position: relative;
-  top: -200px;
-  left: 0;
-  background-color: red;
+  top: -250px;
+  right: 0;
+  background-color: rgba(255, 0, 0, 0.919);
   color: white;
   width: 30%;
   text-align: center;
   padding: 5px;
+  max-height: 25px;
+}
+@media (max-width: 760px) {
+  .grid_1-1-1-1,
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
