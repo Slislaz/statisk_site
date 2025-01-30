@@ -28,6 +28,7 @@ a {
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
 
   gap: 2rem;
 }
@@ -44,8 +45,8 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
-  grid-template-rows: repeat(5, auto);
-  gap: 2rem;
+  grid-template-rows: repeat(3, auto);
+  margin: 0 4rem 4rem 0;
   position: absolute;
 }
 
@@ -61,6 +62,8 @@ a {
   grid-row: span 5;
   display: grid;
   grid-template-rows: subgrid;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  max-height: 400px;
 }
 
 .udsolgt_f {
@@ -95,4 +98,32 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.produkt {
+  width: 300px;
+  grid-row: span 3;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.flex,
+.flex2 {
+  grid-row: span 3;
+  display: grid;
+  grid-template-rows: subgrid;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.flex2 {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+}
+.flex2 h3 h4 {
+  color: white;
+  font-size: 2rem;
 }
