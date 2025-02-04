@@ -1,5 +1,11 @@
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const myProduct = urlParams.get("id");
+
+let productId = myProduct;
+
 let productContainer = document.querySelector(".grid_1-1-1-1");
-fetch(`https://kea-alt-del.dk/t7/api/products/`)
+fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   .then((response) => response.json())
   .then(showlist);
 
@@ -20,6 +26,8 @@ function showlist(products) {
             <div class="udsolgt">
                 <P>udsolgt</P>
             </div>
+
+
         </div>`
     )
     .join("");

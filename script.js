@@ -43,5 +43,7 @@ fetch(`https://kea-alt-del.dk/t7/api/products/${productId}`)
   
     
     
-    `;
+    `.join("");
+    console.log(markup);
+    productContainer.innerHTML = markup;
   });
