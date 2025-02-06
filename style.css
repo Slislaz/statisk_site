@@ -79,6 +79,10 @@ a {
   width: 100%;
   text-align: center;
   padding: 20px;
+  visibility: visible;
+}
+.udsolgt_fr {
+  visibility: hidden;
 }
 
 .rabat {
@@ -91,6 +95,11 @@ a {
   text-align: center;
   padding: 5px;
   max-height: 25px;
+  visibility: hidden;
+}
+
+.rabat_fr {
+  visibility: visible;
 }
 @media (max-width: 760px) {
   .grid_1-1-1-1,
