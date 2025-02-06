@@ -10,12 +10,12 @@ function showCategory(data) {
   console.log("mine date er", data);
   const markup = data
     .map(
-      (Element) => `     
+      (element) => `     
 
      
 
        
-            <a href="produktliste.html?id=${Element.category}">${Element.category}</a>
+            <a href="produktliste.html?id=${element.category}">${element.category}</a>
 
      
 `
